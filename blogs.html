@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body background="Simple-Blue-White-Background-Image.jpg">
+
+
+<div class="header">
+  <h1><font color ="black" size ="25"face="verdana"><b><u>BLOGS</u></b></font></h1>
+  <p><font color="black"size="5"face="verdana">Education is not the matter of grasping. It's the practise of understanding the concepts.</font></p>
+</div>
+<hr>
+
+  <div class="column">
+    <h2><font color ="black"size="5"face="verdana"><b>KINEMATICS</b></font></h2>
+    <p><font color="black">Kinematics is a branch of classical mechanics that describes the motion of points, bodies (objects), and systems of bodies (groups of objects) without considering the forces that cause them to move. Kinematics, as a field of study, is often referred to as the "geometry of motion" and is occasionally seen as a branch of mathematics.<a href="file:///C:/Users/sshar/Desktop/LearnZone (2)/Kinematics.html">Know more</a></font></p>
+  </div>
+  
+  <div class="column">
+    <h2><font color="black"size="5"face="verdana"><b>STRUCTURE OF ATOM</b></font></h2>
+    <p><font color="black">We know by experience that all bodies in nature interact in some way with one another. Force is a measure of the interaction of bodies or of the particles of which the bodies consist. The force may produce either deformation (change in the size or shape of bodies) or acceleration (change in magnitude or direction of velocity).<a href="file:///C:/Users/sshar/Desktop/LearnZone (2)/Structure%20of%20Atom.html">Know more</a></font></p>
+  </div>
+  
+  <div class="column">
+    <h2><font color="black"size="5"face="verdana"><b>SETS, REATIONS AND FUNCTIONS</b></font></h2>
+    <p><font color="black">A relation ‘f’ is said to be a function, if every element of a non-empty set X, has only one image or range to a non-empty set Y.OrIf ‘f’ is the function from X to Y and (x,y) ∊ f, then f(x) = y, where b is the image of a, under function f and a is the preimage of b, under ‘f’. It is denoted as;f: X → Y.<a href="file:///C:/Users/sshar/Desktop/LearnZone (2)/set%20relation.html">Know more</a></font></p>
+  </div>
+</div>
+
+<div class="row">
+<div class="column">
+  <h2><font color="black"size="5"face="verdana"><b>LAWS OF MOTION</b></font></h2>
+  <p><font color="black">We know by experience that all bodies in nature interact in some way with one another. Force is a measure of the interaction of bodies or of the particles of which the bodies consist. The force may produce either deformation (change in the size or shape of bodies) or acceleration (change in magnitude or direction of velocity).<a href="file:///C:/Users/sshar/Desktop/LearnZone (2)/laws.html">Know more</a></font></p>
+</div>
+<div class="column">
+  <h2><font color="black"size="5"face="verdana"><b>SOME BASIC CONCEPTS OF CHEMISTRY</b></font></h2>
+  <p><font color="black">Every substance has unique or characteristic properties. These properties can be classified into twocategories – physical properties and chemical properties.Physical properties are those properties which can be measured or observed without changing the identity or the composition of the substance.<a href="file://C:/Users/sshar/Desktop/LearnZone (2)/Some%20basic%20concepts.html">Know more</a></font></p>
+</div>
+<div class="column">
+  <h2><font color="black"size="5"face="verdana"><b>TRIGONOMETRY</b></font></h2>
+  <p><font color="black">In mathematics, the trigonometric functions (also called circular functions, angle functions or goniometric functions) are real functions which relate an angle of a right-angled triangle to ratios of two side lengths.<a href="file:///C:/Users/sshar/Desktop/LearnZone (2)/trigo.html">Know more</a></font></p>
+</div>
+</body>
+</html>

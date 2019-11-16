@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#img1{
+    position: relative;
+    left: -850px;
+    top: -100px;
+}
+#img2{
+    position: relative;
+    left: 700px;
+    top:  -268px;
+}
+#img3{
+    position: relative;
+    left: 1200px;
+    top:  -440px;
+}
+
+</style>
+</head>
+<body background="Simple-Blue-White-Background-Image.jpg">
+<div class="header">
+<h1><font color ="black" size ="25"face="verdana"><b><u>QUIZ</u></b></font></h1>
+<p><font color="black"> <p><font color="black">Quiz competitions even help build the student’s soft skills; Well now that you know the benefits of quiz competitions, it is probable time to encourage your child to participate in quiz competitions or spelling bees. If you wish your child to develop and improve their skills, that will give them an edge over their competitors.</font></p></font></p>
+</div>
+<hr>
+<div class="column">
+        <h2><font color ="black"><b><u>PHYSICS</u></b></font></h2>
+        <p><font color="black"><a href="">Take Quiz</a></font></p>
+      </div>
+
+      
+      
+      <div class="column">
+     <h2><font color="black"><b><u>CHEMISTRY</u></b></font></h2>
+        <p><font color="black"><a href="">Take Quiz</a></font></p>
+      </div>
+      
+      <div class="column">
+        <h2><font color="black"><b><u>MATHS</u></b></font></h2>
+        <font color="black"><a href="">Take Quiz</a></font>
+      </div>
+    </div>
+<p id="img1"><img src="physics.jpg" style="width:150px;height:150px;"></p>
+<p id="img2"><img src="chemistry.jpg" style="width:150px;height:150px;"></p>
+<p id="img3"><img src="maths.jpg" style="width:150px;height:150px;"></p>
+
+
+ </body>
+ </html>

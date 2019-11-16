@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width:33%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 33%;
+}
+
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body background="Simple-Blue-White-Background-Image.jpg">
+
+<div class="header">
+  <h1><font color="black"><font size="25"><b><u>VIDEOS</u></b></font></h1>
+  
+  <p><font color="black"size="5"><b>Expand your knowledge territory</b> </p>
+</div>
+<hr>
+
+
+<div class="row">
+  <div class="column side">
+    <h2><font color="black"size="5"><b><u>KINEMATICS</u></b></h2>
+    <a href="https://www.youtube.com/watch?v=K_a09clEnlA">Click here</a>
+    <p></p>
+  </div>
+  
+  <div class="column middle">
+    <h2><font color="black"size="5"><b><u>SOME BASICS CONCEPT OF CHEMISTRY</u></b></h2>
+    <a href="https://www.youtube.com/watch?v=Qy0Q_AYs63Y">Click here</a>
+    <p></p>
+  </div>
+  
+  <div class="column side">
+    <h2><font color="black"size="5"><b><u>SETS, RELATIONS AND FUNCTIONS</u></b></h2>
+    <a href="https://www.youtube.com/watch?v=RVFaYvguyM8">Click here</a>
+    <p></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2><font color="black"size="5"><b><u></u>LAWS OF MOTION</u></b></h2>
+    <a href="https://www.youtube.com/watch?v=8THKAHMMwY8">Click here</a>
+    <p></p>
+  </div>
+  <div class="column middle">
+    <h2><font color="black"size="5"><b><u>STRUCTURE OF ATOM</u></b></h2>
+    <a href="https://www.youtube.com/watch?v=Oj-vA63nsBI">Click here</a>
+    <p></p>
+  </div>
+ <div class="column side">
+    <h2><font color="black"size="5"><b><u>TRIGONOMETERY</u></b></font></h2>
+    <a href="https://www.youtube.com/watch?v=bEuz6secudo">Click here</a>
+    <p></p>
+  </div>
+</div>
+  
+  
+</body>
+</html>
